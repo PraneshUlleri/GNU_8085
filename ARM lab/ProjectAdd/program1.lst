@@ -1,0 +1,50 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             PROG1,CODE,READONLY
+    2 00000000         ENTRY
+    3 00000000 E3A00064        MOV              R0, #100
+    4 00000004 E3A010C8        MOV              R1, #200
+    5 00000008 E0812000        ADD              R2, R1, R0
+    6 0000000C EAFFFFFE 
+                       LOOP    B                LOOP
+    7 00000010         
+    8 00000010                 END
+Command Line: --debug --xref --apcs=interwork --depend=.\program1.d -o.\program
+1.o -I"D:\arm lab\ARM\RV31\INC" -I"D:\arm lab\ARM\CMSIS\Include" --predefine="_
+_EVAL SETA 1" --list=.\program1.lst program1.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 2 in file program1.asm
+   Uses
+      None
+Comment: ENTRY unused
+LOOP 0000000C
+
+Symbol: LOOP
+   Definitions
+      At line 6 in file program1.asm
+   Uses
+      At line 6 in file program1.asm
+Comment: LOOP used once
+PROG1 00000000
+
+Symbol: PROG1
+   Definitions
+      At line 1 in file program1.asm
+   Uses
+      None
+Comment: PROG1 unused
+3 symbols
+334 symbols in table
