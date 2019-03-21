@@ -1,0 +1,2 @@
+Dependencies for Project 'project3', Target 'Target 1': (DO NOT MODIFY !)
+F (.\p3.asm)(0x5C935852)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "D:\arm lab\ARM\RV31\INC"-I "D:\arm lab\ARM\CMSIS\Include"--list .\p3.lst --xref -o .\p3.o --depend .\p3.d)
