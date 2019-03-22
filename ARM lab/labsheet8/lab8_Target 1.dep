@@ -1,0 +1,2 @@
+Dependencies for Project 'lab8', Target 'Target 1': (DO NOT MODIFY !)
+F (.\lab81.asm)(0x5C94693B)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "D:\arm lab\ARM\RV31\INC"-I "D:\arm lab\ARM\CMSIS\Include"--list .\lab81.lst --xref -o .\lab81.o --depend .\lab81.d)

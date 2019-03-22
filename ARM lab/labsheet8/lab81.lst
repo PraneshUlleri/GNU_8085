@@ -1,0 +1,48 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             shifting1, CODE, READONLY
+    2 00000000         ENTRY
+    3 00000000 E3E00000        MOV              R0, #-1
+    4 00000004 E3A01002        MOV              R1, #2
+    5 00000008 E0800121        ADD              R0, R0, R1, LSR #2
+    6 0000000C         END
+                       
+Command Line: --debug --xref --apcs=interwork --depend=.\lab81.d -o.\lab81.o -I
+"D:\arm lab\ARM\RV31\INC" -I"D:\arm lab\ARM\CMSIS\Include" --predefine="__EVAL 
+SETA 1" --list=.\lab81.lst lab81.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+END 0000000C
+
+Symbol: END
+   Definitions
+      At line 6 in file lab81.asm
+   Uses
+      None
+Comment: END unused
+ENTRY 00000000
+
+Symbol: ENTRY
+   Definitions
+      At line 2 in file lab81.asm
+   Uses
+      None
+Comment: ENTRY unused
+shifting1 00000000
+
+Symbol: shifting1
+   Definitions
+      At line 1 in file lab81.asm
+   Uses
+      None
+Comment: shifting1 unused
+3 symbols
+334 symbols in table
